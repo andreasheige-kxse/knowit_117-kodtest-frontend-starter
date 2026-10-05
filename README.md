@@ -4,6 +4,8 @@ Det här är starter-repot för kodtestet. Uppgiften står i dokumentet du fick 
 
 Mock-API:t är byggt med [MSW](https://mswjs.io) och beter sig medvetet som ett riktigt nätverk: svar kan vara långsamma, misslyckas eller komma i fel ordning, och andra köpare bokar platser samtidigt som du.
 
+Har du inte använt MSW tidigare? Läs [Getting started with MSW](mock/docs/msw-guide.md) (på engelska) först.
+
 ## Kom igång
 
 Du behöver Node 22.12 eller senare.
