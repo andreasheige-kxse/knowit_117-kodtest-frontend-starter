@@ -1,0 +1,27 @@
+{
+  "name": "@kodtest/mock-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mockat API för kodtestet Evenemangsbokning, byggt med MSW",
+  "type": "module",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+    "./browser": { "types": "./dist/browser.d.ts", "default": "./dist/browser.js" },
+    "./node": { "types": "./dist/node.d.ts", "default": "./dist/node.js" },
+    "./openapi.yaml": "./openapi.yaml"
+  },
+  "files": ["dist", "openapi.yaml"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "msw": "^3.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
+  },
+  "engines": { "node": ">=22.12" }
+}

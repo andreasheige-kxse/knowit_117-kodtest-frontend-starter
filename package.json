@@ -1,0 +1,9 @@
+{
+  "name": "kodtest-evenemangsbokning",
+  "private": true,
+  "workspaces": ["mock"],
+  "scripts": {
+    "test:mock": "npm test -w @kodtest/mock-api"
+  },
+  "engines": { "node": ">=22.12" }
+}
